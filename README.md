@@ -36,15 +36,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.asos.com/nl/dames/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./images/home.JPG" width="375px" alt="homepage">
+  Dit is de homepage van Asos, een website die heel veel kleding, accesoires en schoenen verkoopt. De site is bekend en ik vond deze site geschikt door de variatie van de content. 
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="./images/productpagina.JPG" width="375px" alt="productomschrijving">
+  De pagina is de omschijving van een bepaald product, ik zal waarschijnlijk niet de pagina van dit exacte product gebruiken maar de content is op elke productpagina hetzelfde. 
  
 </details>
 
@@ -54,9 +56,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  Ik heb de site door een validator gehaald, de validator gaf al gelijk een error aan dat het niet mogelijk was om de site te checken. Uiteindelijk is dit wel gelukt door de code direct in de validator te plakken. 
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De code bevat meer dan 700 errors, veel dezelfde fouten worden gemaakt zoals een alt tekst die ontbreekt of een div verkeerd gebruikt.
+  - De site heeft een knop waarmee je kan skippen tot de inhoud, dit is handig voor een screenreader. Ook was deze functie niet makkelijk te vinden en kwam ik hier perongeluk op.
+  - De menu is erg groot en heel lastig om met een screenreader doorheen te gaan. 
+  - Af en toe slaat de screenreader een onderdeel over dus zullen deze elementen waarschijnlijk geen alt tekst bevatten.
+
+ <img src="./images/validator.jpg" width="375px" alt="De errors van de code">
+  
+  
 
 </details>
 
@@ -68,7 +79,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="./images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
+  Op de pagina is er veel dezelfde content te zien, ik wil elk deel er wel inzitten maar in verminder de hoeveelheid van bijvoorbeeld een lijst.
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -88,7 +100,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+   Deze week ben ik begonnen met mijn html document. Ik merkte dat veel van de stof van vorig jaar was weggezakt zoals hoe de tags ook alweer heten. Ik begon met de header, met wat hulp kon ik de stof weer naar boven halen. De tweede les kreeg ik de header af en hier was ik erg blij mee. De iconen heb ik gelinkt naar de productpagina 
+  <img src="./images/header.jpg" width="375px" alt="de header">
+  Ik heb deze week eerst orde in mijn hoofd gecreeërd door eerst foto's van elk blok in de code te zetten. Zo weet ik welk gedeelte waar moet komen. Het eerste en tweede blokje heb ik deze week kunnen uitwerken. Het plaatje van het tweede blokje heb een beetje gephotoshopt, zodat ik zelf de teksten met code erin kon zetten. De teksten die overlapte met het model op de foto heb ik erin gehouden omdat ik deze lastig kan wegwerken. 
+
+  <img src="./readme-images/banner20procent.jpg" width="375px" alt="de foto waar ik tekst heb weggewerkt">
+  <img src="./images/bannerklaar.jpg" width="375px" alt="hoe de banner is geworden op mijn site">
+  <img src="./images/orginelebanner.jpg" width="375px" alt="hoe de banner eruit ziet op de orginele site">
+  
+  Ik had nog nooit gewerkt met first-of-type, nth-of-type en child. Ik heb in mijn vorige projecten veel met classes gewerkt maar omdat het niet de bedoeling is dat je er daar veel van gebruikt, vond ik het wel handig om te leren. Met aantekeningen maken en hulp van klasgenoten is het gelukt. In de code hieronder zie je dat ik dit heb toegepast om twee sections aan te spreken.
+
+  <img src="./images/codeblokjes.jpg" width="375px" alt="code van de blokjes">
 
 
   ### Agenda voor meeting
