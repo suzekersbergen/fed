@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/styletwee.css" rel="stylesheet">
+	<link href="styles/styleheader.css" rel="stylesheet">
+	
 </head>
 <body>
     <header>
@@ -46,22 +48,99 @@
 				<li><a href="product.html"><img src="/readme-images/zoekbalk.jpg" alt="Zoeken"></a></li>
 				<li><a href="product.html"><img src="/readme-images/profiel.jpg" alt="Zoeken"></a></li>
 				<li><a href="product.html"><img src="/readme-images/favorieten.jpg" alt="favorieten"></a></li>
-				<li><a href="product.html"><img src="/readme-images/winkelmandje.jpg" alt="winkelmandje"></a></li>
+				<li><a href="product.html"><img src="/readme-images/winkelmandje.jpg" alt="winkelmandje" id="winkelwagenIcon"></a> 
+					<span id="winkelwagenAantal" class="winkelwagen-aantal"></span>
+				</li>
 
 			</ul>
 
 		</nav>
 	</header>
     <main>
-		<section class="containertwee">
+		<div class="dezemocht">
+		<section class="eerste">
 			<img src="./readme-images/product.jpg" alt="foto jas">
-			<section> 
-				<img src="./readme-images/aantallikes.jpg" alt="aantalbewaard">
-			</section>
+			<img src="./readme-images/aantallikes.jpg" alt="aantalbewaard">
+			<h3>Weekday - Windy - Oversized gewatteerd windjack in donkergrijs</h3>
+			<h4>€114,99</h4>
+			<img src="./readme-images/upload.jpg" alt="uploadicoon">
+		</section>
+
+		<section class="tweede">
+			<img src="./readme-images/korting.jpg" alt="kortingbanner">
+		</section>
+
+		<section class="derde">
+			<p><b>Kleur</b>: Donkergrijs</p>
+			<br>
+			<p><b>Maat</b></p>
+			<p>Maatlabel</p>
+		</section>
+		<section class="vierde">
+			<button>Selecteer</button>
+		</section>
+		<section class="vijfde">
+			<button id="inWinkelmandButton">In winkelmand</button>
+			<img src="./readme-images/hart.jpg" alt="harticoon">
+		</section>
+
+		<section class="zesde">
+			<hr>
+			<details>
+				<summary>Merk</summary>
+				<p>Weekday heeft Scandinavische roots en een streetstyle-uitstraling. Hiermee staat het merk garant voor jouw nonchalante minimalistische look. Het in 2002 opgerichte Zweedse merk laat zich inspireren door kunst en pop- en jeugdcultuur om de meest vernieuwende collecties te creëren. Scroll door de ASOS-collectie van Weekday voor nonchalante basics zoals T-shirts, jurken, jacks en denim. Of misschien gaat jouw voorkeur uit naar zwemkleding, lingerie en accessoires, en ontdek je liever de bikini's, bh's met zachte cups, sieraden en zonnebrillen van het merk.</p>
+			</details>
+			<hr>
+			<details>
+				<summary>Maat & pasvorm</summary>
+				<p>Lengte model: 175,5cm / 5' 9''</p>
+				<p>Model draagt: UK S/ EU S/ US XS</p>
+			</details>
+			<hr>
+			<details>
+				<summary>Zorg voor mij</summary>
+				<p>Machinewas volgens de voorschriften op het waslabel</p>
+			</details>
+			<hr>
+			<details>
+				<summary>Over mij</summary>
+				<p>Gladde geweven stof: gewatteerd voor warmte</p>
+				<p>Materiaal: 100% polyamide.</p>
+			</details>
+			<hr>
+		</section>
+	</div>
+		<section>
+			<h2>Dit vind je misschien ook leuk</h2>
+		</section>
+		<section class="grid">
+			<ul>
+					<li><a href="#">
+						<img src="./readme-images/ookleuk.jpg" alt="groenejas">
+						<h3>€84,99</h3>
+						<p>Collusion</p>
+					</a></li>
+
+					<li><a href="#">
+						<img src="./readme-images/frisseoutfits.jpg" alt="Frisse outfits">
+						<h3>€63,99</h3>
+						<p>Noisy May</p>
+					</a></li>
+					<li><a href="#">
+						<img src="./readme-images/topshop.jpg" alt="topshop">
+						<h3>€129,99</h3>
+						<p>Topshop</p>
+					</a></li>
+					<li><a href="#"></a>
+						<img src="./readme-images/cadeauwinkel.jpg" alt="de cadeauwinkel">
+						<h3>€39,99</h3>
+						<p>Bershka</p>
+					</a></li>
+			</ul>
 		</section>
     </main>
     <footer>
-
+		
     </footer>
 	<script defer src="scripts/script.js"></script>
 </body>

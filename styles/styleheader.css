@@ -1,0 +1,152 @@
+/*header navigatie*/
+  
+header {
+    position: relative;
+    z-index: 5;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45, 45, 45);
+}
+
+nav button {
+    background-color: transparent;
+    border-width: 0em;
+    border-color: transparent;
+
+}
+
+nav > ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    align-items: center;
+}
+
+nav img {
+    width: 3em;
+    height: auto;
+}
+
+nav li:nth-child(2) img {
+    width: 6em;
+    height: auto;
+}
+
+nav > ul > li:last-child {
+  position: relative;
+}
+
+/*dames / heren menu*/
+
+nav > ul > li > ul  {
+  background-color: lime;
+  display: none;
+}
+
+@media screen and (max-width:38em) {
+  nav > ul > li > ul {
+      background-color: rgb(255, 255, 255); 
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      padding: 5em;
+      inset: 0;
+      display: block;
+      translate: -100% 0;
+      transition: translate 250ms ease-in-out;
+      z-index: 50;
+  }
+  body.menuIsOpen nav > ul > li > ul {
+      display: flex;
+      translate: 0 0;
+  }
+}
+
+@media screen and (min-width:38em) {
+  nav > ul > li > ul  {
+      background-color: aqua;
+      display: block;
+  }
+}
+
+nav ul > li > ul > li > ul {
+  display: none;
+}
+
+ul > li > ul > li:first-child {
+  display: block;
+}
+
+ul > li > ul > li:hover > ul {
+  display: block;
+}
+
+ul > li > ul> li > ul {
+  list-style: none;
+  margin: 1em;
+  padding: 1em;
+}
+
+ul > li > ul > li {
+  list-style: none;
+}
+
+nav span {
+  padding: 2em;
+}
+
+nav > ul > li:first-child > ul > li:nth-child(1), nav > ul > li:first-child > ul > li:nth-child(2) {
+  background-color: white;
+  padding: 0em;
+}
+
+/* einde dames/heren menu*/
+
+/* responsive menu */ 
+
+@media screen and (min-width: 38em) {
+  nav > ul > li {
+    position: relative;
+  }
+
+  nav > ul > li > ul {
+    top: 100%; /* Plaats het menu onder de navigatie */
+    left: 0; /* Lijn het menu uit met de linkerkant */
+    display: flex; 
+    background-color: transparent; /* Kleur aanpassen voor betere zichtbaarheid */
+    padding: 10px; /* Voeg wat ruimte toe voor een betere opmaak */
+    z-index: 10; 
+    list-style: none; 
+    background-color: rgb(45, 45, 45);
+  }
+
+  nav > ul > li > ul > li {
+    display: inline-block; /* Laat de items naast elkaar staan */
+    margin-right: 10px; 
+  }
+
+  /* Verberg het kruis op grotere schermen */
+  nav > ul > li:last-child button {
+    display: none !important;
+  }
+}
+
+/* responsive */
+
+
+/*footer*/
+
+
+/*
+@media screen and (min-width: 38em) {
+  nav > ul > li:nth-of-type(3) {
+    background-color: gold;
+  }
+}
