@@ -116,12 +116,19 @@ nav > ul > li:first-child > ul > li:nth-child(1), nav > ul > li:first-child > ul
     position: relative;
   }
 
+  nav > ul > li:first-of-type {
+    margin-left: 3em;
+  }
+  
+  nav li:nth-child(2) img {
+    margin-left: 28em;
+  }
+  
   nav > ul > li > ul {
-    top: 100%; /* Plaats het menu onder de navigatie */
     left: 0; /* Lijn het menu uit met de linkerkant */
     display: flex; 
     background-color: transparent; /* Kleur aanpassen voor betere zichtbaarheid */
-    padding: 10px; /* Voeg wat ruimte toe voor een betere opmaak */
+    padding: 10px; 
     z-index: 10; 
     list-style: none; 
     background-color: rgb(45, 45, 45);
@@ -131,22 +138,29 @@ nav > ul > li:first-child > ul > li:nth-child(1), nav > ul > li:first-child > ul
     display: inline-block; /* Laat de items naast elkaar staan */
     margin-right: 10px; 
   }
+}
 
-  /* Verberg het kruis op grotere schermen */
-  nav > ul > li:last-child button {
-    display: none !important;
+/*burger menu weg */ 
+@media screen and (min-width: 38em) {
+  nav > button {
+    display: none;
   }
 }
+
 
 /* responsive */
 
 
 /*footer*/
 
+footer {
+  background-color: rgb(221, 221, 221);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
 
-/*
-@media screen and (min-width: 38em) {
-  nav > ul > li:nth-of-type(3) {
-    background-color: gold;
-  }
+}
+
+footer p {
+  margin-left: 3em;
 }

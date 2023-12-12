@@ -66,6 +66,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Af en toe slaat de screenreader een onderdeel over dus zullen deze elementen waarschijnlijk geen alt tekst bevatten.
 
  <img src="./images/validator.jpg" width="375px" alt="De errors van de code">
+ <a href="readme-images/checklistsuze.pdf">Ingevulde WCAG checklist van de site van asos.</a>
   
   
 
@@ -83,10 +84,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Op de pagina is er veel dezelfde content te zien, ik wil elk deel er wel inzitten maar in verminder de hoeveelheid van bijvoorbeeld een lijst.
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="images/breakdown2.jpg" width="375px" alt="breakdown van productpagina">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/breakdown3.jpg" width="375px" alt="breakdown van het uitklap menu">
 
 </details>
 
@@ -112,25 +113,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   <img src="./images/codeblokjes.jpg" width="375px" alt="code van de blokjes">
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
 </details>
 
 
@@ -154,30 +136,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./images/damespadding.jpg" width="375px" alt="padding binnen menu"> Ik merkte dat door een kleine toevoeging van een animatie alles verschoof, er was veel ruimte in mijn menu en in de nav. Door alle onderdelen een ander kleurtje te geven kwam ik erachter dat er iets mis was met de padding wat het plaatje van het kruis uit beeld drukt. Blijjbaar had ik een span op dames en heren gezet, in de header heb ik ook een span staan voor de animatie. Ik had een padding op nav span gezet waardoor alle spans in de nav een padding kregen. 
   <img src="./images/articlejas.jpg" width="375px" alt="article gebruikt"> Ik had moeite met de stijling van mijn tweede pagina, ik heb met classes geprobeerd bepaalde sections er dan niet meer zo uit te laten zien. Dat werkte niet, als ik iets had aangesproken met nth-of-type dan kon ik het niet meer ongedaan maken met een class bij een andere section. Toen heb ik articles gebruikt op mijn tweede pagina, dit was niet echt de bedoeling dus ik moest een nieuwe manier bedenken. De studentassistent kwam met het idee om een class op de body te zetten en dan in de css de class aan te spreken en daarna een nth-of-type, dit werkte in de meeste gevallen. Toen werd het duidelijk voor mij dat je meerdere css pagina's mag aanmaken. Dit was veel makkelijker en overzichtelijker, ik heb toen mijn vorige code veranderd. 
   <img src="./images/animatie.jpg" width="375px" alt="winkelmand animatie"> Op dlo stonden een aantal odprachten over animaties maken, deze heb ik gebruikt om mijn eigen animatie te maken. Zelf is de opzet van mijn nav vrij ingewikkeld dus was het niet heel makkelijk om dit op mijn pagina toe te passen. Toen wou ik een andere animatie gaan maken, dat het hartje gaat bewegen als je er op klikt. Het bleek dat je hiervoor veel frames nodig had met de animatie erop, ik ging maar verder met me eerdere plan. Als iemand op de 'in winkelwagen' button klikt moet er een getal komen bij het icoon van de winkelwagen. Met wat tutorials te hebben gekeken had ik een idee hoe ik dit kon doen. Toen ik het ging uitvoeren merkte ik dat die elementen die ik probeerde aan te spreken niet aangesproken werden. Ik heb het toen aan chatGPT gevraagd en met een beetje hulp zag ik de fout in, ik had mijn code weer niet specifiek genoeg gemaakt. Uiteindelijk ben ik erg trots op mijn animatie. 
-
-  
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  bron: https://chat.openai.com/ & (Web Dev Simplified, 2018)
 
 </details>
 
@@ -192,8 +151,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Ik heb mijn site door een validator gehaald en er kwamen bijna geen errors uit de code, alleen iets over het document maar de studentassistent zei dat ik dit kon negeren omdat dit er al in stond toen ik dit bestand gebruikte. IK kreeg een error dat er een a tag sluit maar nergens opend, dit was een verdwaalde tag die ik vergeten was om weg te halen. Dit heb ik gelijk even aangepast. Verder kreeg ik geen andere errors of warnings. 
+
+  Toen ik de screenreader over de pagina liet gaan merkte dat dit al fijner werkte als de echte site. Op de echte site skipt de screenreader veel belangrijke dingen, op mijn site doet die dit niet. De meeste alt teksten zijn informatief, wel moet ik nog even kijken of alle tekst uit de plaatjes ook in de alt tekst staan. 
+
+
+   <a href="readme-images/checklistsuze.pdf">Ingevulde WCAG checklist van de site van asos.</a>
 
 </details>
+
 
 
 
@@ -209,29 +175,23 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="./images/navblok.jpg" width="375px" alt="het blokje onder de nav">het menublokje staat half op de navigatie balk maar ik vond het toch een goede poging. Door de width aan te passen werd het aan de rechterkant een balk. Ik heb het kruis proberen weg te krijgen door het laatste kind een display none te geven, toen had ik de code specifieker gemaakt met de button ook nog te benoemen en de laatste poging was om important erachter te zetten. Deze pogingen werkte allemaal niet en ik heb het kruis maar laten staan. 
   <img src="./images/respmenu.jpg" width="375px" alt="responsive menu"> Op de site zelf het menu er op een bepaald punt zo uit, dat is de menubalk die op een later breakpoint onder de nav komt. Ik weet niet hoe ik dit hier weg krijg, ik heb het breakpoint nog proberen te verandedren maar dat maakt geen verschil in dit beeld.
   <img src="./images/resproduct.jpg" width="375px" alt="responsive productpagina"> De tweede pagina wou ik ook repsonsive hebben, ik had twee colommen nodig om bepaalde sections naast elkaar te zetten. Met hulp van de docent heb ik een grid gemaakt. Om alles op de goede plek te zetten heb ik classes gebruikt op de verschillende sections. Ook mocht ik een div aanmaken zodat ik de grid beter kon aanspreken. Het kleinere plaatje wat het aantal likes bevat staat in dezelfde section als het grote plaatje maar deze heeft de position absolute. Ik heb in de media query deze maten veranderd voor een groot scherm zodat het plaatje meegaat met het andere plaatje. 
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  <img src="./images/grideerst.jpg" width="375px" alt="dit was de code van de grid met 4 plaatjes eerst"> De grid die ik gebruik op de eerste en tweede pagina had ik eerder al responsive gemaakt, alleen staat deze op een groot scherm links van de pagina terwijl ik hem in het midden wil.
+  <img src="./images/gridcenter.jpg" width="375px" alt="naar het midden geprobeerd te krijgen"> Hier heb ik met justify content center geprobeerd de plaatjes naar het midden te krijgen. Dit werkte niet. 
+  <img src="./images/vervolgcenter.jpg" width="375px" alt="gecentreerd"> Zo zag het er toen uit, de plaatjes stonden wel in het midden maar dan onder elkaar. 
+  <img src="./images/oplossinggrid.jpg" width="375px" alt="oplossing voor de grid">Display block wat ik eerder had gebruikt was onnodig hier heb ik display flex voor gebruikt, toen heb ik flex wrap toegepast zodat de afbeeldingen naar de volgende regel gaan als deze niet meer passen. 
+  (Flex-Wrap - CSS: Cascading Style Sheets | MDN, 2023)
+  <img src="./images/burgerbuttonweg.jpg" width="375px" alt="burger button weg"> Ik kwam erachter dat op een groot scherm mijn burger menu icoon nog te zien is, ik kreeg deze vrij makkelijk weg door button uit de nav te selecteren, ik hoopte dat hiermee ook het kruis icoontje weg zou gaan wat me eerder niet was gelukt maar helaas werkte dat niet.
+  <img src="./images/iconenrechts.jpg" width="375px" alt="iconen naar rechts"> Ook wou ik de iconen naar rechts verschuiven, ik heb een margin left gezet op het logo waardoor alle iconen automatisch naar rechts verschoven. 
+  Zo ziet mijn nav er nu uit op een groot scherm:  
+  <img src="./images/navnu.jpg" width="375px" alt="mijn navigatie nu">
+  <img src="./images/sluitbuttonweg1.jpg" width="375px" alt="sluit button weg krijgen"> Vorige week had ik al veel geprobeerd om de sluit button weg te krijgen uit mijn nav op een groot scherm. Deze week had ik het idee dat er meer elementen werden aangesproken wanneer ik dat wou, daarom besloot ik het nog een keer te proberen. In de eerste poging had ik het laatste kind van de nav ul li gepakt, er gebeurde niks.
+  <img src="./images/sluitbutton2.jpg" width="375px" alt="tweede poging sluit button wegkrijgen"> In de tweede poging had ik het hele klikbare gebied van de button geselecteerd en dan deze op display none zetten, ook dit werkte niet.
+  <img src="./images/sluitbutton3.jpg" width="375px" alt="derde poging sluit button wegkrijgen"> In de derde poging heb ben ik terug gegaan naar het laatste kind van de nav ul li aan te spreken en deze een important tag te geven, ook hier werd de knop niet aangesproken. Ik heb het hierbij gelaten omdat ik niet wist hoe ik dit weg kon krijgen. 
+  <img src="./images/plaatjesgrid.jpg" width="375px" alt="grid met converse">Op een groot scherm komt er naast het plaatje converse nog een plaatje te staan, met display none op een klein scherm heb ik hem hier onzichtbaar gemaakt. De tekst onder de plaatjes stonder overal en nergens, daarom heb ik voor op een groot scherm een grid aangemaakt waarin ik elk onderdeel een plek geef. Toen zag mijn site er zo uit: 
+  <img src="./images/uitkomsteerst.jpg" width="375px" alt="uitkomst grid"> De tekst en button staan nog niet goed onder de plaatjes en de plaatjes staan niet in het midden. 
+  <img src="./images/gridmidden.jpg" width="375px" alt="de grid naar het midden verplaatsen"> Ik heb met margin left alles gepositioneerd, als je de site in de browser bekijkt op responsive dat staat alles mooi op de goede plek. Als je de site voledig groot bekijkt dan staat niet alles helemaal recht meer. Ik wist niet hoe ik dit op elk formaat goed kon plaatsen. Dit is het resultaat:
+  <img src="./images/resultaat.jpg" width="375px" alt="resultaat van het positioneren">
+      
 </details>
 
 
@@ -244,19 +204,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/uitkomst.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Grid vond ik aan het begin lastig maar is me toch gelukt, en het is ook gelukt om deze op een groot scherm in het midden te krijgen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="images/goedgelukt.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het menu is niet geworden zoals ik wou, het menu bevat geen plaatjes en op een groter scherm is die niet hetzelfde als op de site. Ik heb veel geprobeerd maar het is me niet helemaal gelukt. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="images/mindergelukt.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -272,8 +232,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. ChatGpt, ik kon deze bron niet citeren
+  2. Flex-Wrap - CSS: Cascading Style Sheets | MDN. (2023, 11 augustus). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+  3. Web Dev Simplified. (2018, 4 oktober). JavaScript shopping cart tutorial for beginners [Video]. YouTube. https://www.youtube.com/watch?v=YeFzkC2awTM
+  4. HTML Details tag. (z.d.). https://www.w3schools.com/tags/tag_details.asp 
 
 </details>

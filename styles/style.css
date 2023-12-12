@@ -55,6 +55,14 @@ h2 {
 	left: 10%;
 }
 
+main > section:first-of-type > p:nth-of-type(3) {
+	margin-top: 1em;
+}
+
+.container {
+	margin-top: 1em;
+}
+
 /*grid*/
 
 .grid ul {
@@ -87,14 +95,13 @@ h3 {
 
 .container p:first-of-type {
 	position: absolute;
-	top: auto;
+	top: 13em;
 	left: 2%;
 }
 
 .container p:nth-of-type(2) {
 	position: absolute;
-	top: 200%;
-	left: 2%;
+	top: 27em;
 	font-size: xx-small;
 }
 
@@ -138,19 +145,44 @@ section:nth-of-type(5) > h2 {
 	text-align: center;
 }
 
+section:nth-of-type(5) > ul {
+	list-style: none;
+}
+
+section:nth-of-type(5) > ul > li {
+	margin-top: 1em;
+}
+
+section:nth-of-type(5) hr {
+	width: 10em;
+}
+
+
+/*responsive*/
+
 @media screen and (min-width: 38em) {
     .grid {
-        display: block;
+        display: flex; 
+        justify-content: center; 
+        flex-wrap: wrap; /* Laat de items naar de volgende regel gaan als ze niet meer passen */
     }
     .grid ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+        display: flex; 
+        flex-wrap: wrap; /* Laat de afbeeldingen naar de volgende regel gaan als ze niet meer passen */
+        justify-content: center; 
+        list-style: none;
+    }
+    .grid ul li {
+        margin: 0.5em; 
     }
 
  }
 
-/*responsive*/
+ /* bron: (Flex-Wrap - CSS: Cascading Style Sheets | MDN, 2023) */
 
+
+
+/*plaatje niet laten zien op klein scherm*/
 .container img:nth-of-type(2) {
 	display: none;
 }
@@ -164,3 +196,120 @@ section:nth-of-type(5) > h2 {
 		display: block;
 	}
 }
+
+/*tekst weghalen bij een groter scherm*/
+
+@media screen and (min-width: 38em) {
+	.container p:first-of-type {
+		display: none;
+	}
+
+	.container p:nth-of-type(2) {
+		display: none;
+	}
+
+	.container h2:first-of-type {
+		display: none;
+	}
+}
+
+/*plaatje toevoegen naast converse*/
+
+/*onderdelen niet laten zien op klein scherm*/
+.converse img:nth-of-type(2) {
+	display: none;
+}
+
+.converse h3:nth-of-type(2) {
+	display: none;
+}
+
+.converse p:nth-of-type(2) {
+	display: none;
+}
+
+.converse button:nth-of-type(2) {
+	display: none;
+}
+
+/*onderdelen toevoegen*/ 
+
+@media screen and (min-width: 38em) {
+	.converse img:nth-of-type(2) {
+		display: block;
+	}
+
+	.converse h3:nth-of-type(2) {
+		display: block;
+	}
+	
+	.converse p:nth-of-type(2) {
+		display: block;
+	}
+
+	.converse button:nth-of-type(2) {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 38em) {
+	.converse {
+		display: grid;
+		grid-template-columns: max-content max-content;
+		grid-template-rows: max-content max-content max-content max-content;
+	}
+
+	.converse img:first-of-type {
+		grid-column-start: 1;
+        grid-row-start: 1;
+		margin-left: 9em;
+	}
+
+	.converse h3:first-of-type {
+		grid-column-start: 1;
+        grid-row-start: 2;
+		margin-left: 5em;
+	}
+
+	.converse p:first-of-type {
+		grid-column-start: 1;
+		grid-row-start: 3;
+		margin-left: 7em;
+	}
+
+	.converse button:first-of-type {
+		grid-column-start: 1;
+        grid-row-start: 4;
+		margin-left: 20em;
+		margin-right: auto;
+	}
+
+	.converse img:nth-of-type(2) {
+		grid-column-start: 2;
+        grid-row-start: 1;
+		margin-left: 6em;
+	}
+
+	.converse h3:nth-of-type(2) {
+		grid-column-start: 2;
+        grid-row-start: 2;
+		margin-left: 4em;
+	}
+
+	.converse p:nth-of-type(2) {
+		grid-column-start: 2;
+		grid-row-start: 3;
+		margin-left: 5em;
+	}
+
+	.converse button:nth-of-type(2) {
+		grid-column-start: 2;
+        grid-row-start: 4;
+		margin-right: 10em;
+		margin-left: auto;
+	}
+	
+
+}
+
+
